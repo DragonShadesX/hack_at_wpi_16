@@ -9,7 +9,7 @@
 #The accompanying Python script creates a GUI where the user can enter the desired canned responses. The script then edits the .lua file and modifies lines 68-71 which are the strings containing these responses.
 #Scripts that modify scripts sound like viruses, but this is a hackathon and Myo doesn't allow scripts to interact directly with the filesystem.
 
-#NOTE: If the number of lines changes, THE PYTHON SCRIPT WILL NO LONGER WORK! You must edit the lines in the python script. 
+#NOTE: If the number of lines changes, THE PYTHON SCRIPT WILL NO LONGER WORK! You must edit the lines in the python script.
 ]]--
 
 scriptId = ''
@@ -69,12 +69,10 @@ function magic(arrayToPrint)
     myo.keyboard("return", "press")
     --No more magic
 end
-
---Strings containing the user defined responses, these get edited by the python script
-waveInGestureString = "wave in gesture"
-waveOutGestureString = "wave out gesture"
-fistGestureString = "fist gesture"
-fingerSpreadGestureString = "open hand gesture"
+waveInGestureString = "aaa"
+waveOutGestureString = "bbb"
+fistGestureString = "ccc"
+openHandGestureString = "ddd"
 
 function onPoseEdge(pose, edge)
     --Wave Gestures

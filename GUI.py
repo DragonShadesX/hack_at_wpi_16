@@ -16,10 +16,10 @@ def save_quit():
         data = file.readlines()
 
 # Edits the lines
-    data[57] = 'waveInGestureString = "' + wavein_text.get(1.0, 'end-1c') + '"\n'
-    data[58] = 'waveOutGestureString = "' + waveout_text.get(1.0, 'end-1c') + '"\n'
-    data[59] = 'fistGestureString = "' + fist_text.get(1.0, 'end-1c') + '"\n'
-    data[60] = 'openHandGestureString = "' + spread_text.get(1.0, 'end-1c') + '"\n'
+    data[71] = 'waveInGestureString = "' + wavein_text.get(1.0, 'end-1c') + '"\n'
+    data[72] = 'waveOutGestureString = "' + waveout_text.get(1.0, 'end-1c') + '"\n'
+    data[73] = 'fistGestureString = "' + fist_text.get(1.0, 'end-1c') + '"\n'
+    data[74] = 'openHandGestureString = "' + spread_text.get(1.0, 'end-1c') + '"\n'
 
 # and write everything back
     with open('canned_responses.txt', 'w') as file:
