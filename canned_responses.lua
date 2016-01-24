@@ -69,10 +69,10 @@ function magic(arrayToPrint)
     myo.keyboard("return", "press")
     --No more magic
 end
-waveInGestureString = "aaa"
-waveOutGestureString = "bbb"
-fistGestureString = "ccc"
-openHandGestureString = "ddd"
+waveInGestureString = "left"
+waveOutGestureString = "right"
+fistGestureString = "bro fist"
+openHandGestureString = "high five"
 
 function onPoseEdge(pose, edge)
     --Wave Gestures
@@ -107,7 +107,7 @@ function onPoseEdge(pose, edge)
     if pose == "fingersSpread" then
         if edge == "on" then
             if pose  == "fingersSpread" then
-                magic(fingerSpreadGestureString)
+                magic(openHandGestureString)
             end
         end
     end
